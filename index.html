@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +9,9 @@
 </head>
 <body class="text-gray-500">
 
-  <div class="container mx-auto">
+  <div class="container mx-auto px-4">
     <nav class="bg-white shadow-md">
-      <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex justify-between items-center p-4">
         <h1 class="font-bold uppercase">
           <a href="#">Food Blog</a>
         </h1>
@@ -35,27 +34,79 @@
         </ul>
       </div>
     </nav>
-    <main class="px-16 py-16">
+    <main class="px-4 py-8 md:px-16 md:py-16">
       <div class="flex justify-end space-x-4 mb-8">
         <a href="#" class="text-red-500">Log In</a>
         <a href="#" class="text-red-500">Sign Up</a>
       </div>
       <header class="mb-12">
-        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-        <h3 class="text-2xl mt-2">Discover your favorite recipes</h3>
+        <h2 class="text-gray-700 text-4xl md:text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-xl md:text-2xl mt-2">Discover your favorite recipes</h3>
       </header>
       <section>
-        <h4 class="font-bold text-xl mb-4">Latest Recipes</h4>
-        <article class="mb-8">
-          <img src="assets/bakedsalmon.jpg" alt="Baked salmon with creamy spinach mushrooms sauce" class="w-full h-auto mb-4" />
-          <div>
-            <span class="block font-semibold">Baked salmon with creamy spinach mushrooms sauce</span>
-            <span class="block text-gray-600">Recipe by name</span>
-          </div>
-        </article>
-        <h4 class="font-bold text-xl mb-4">Most Popular</h4>
-        <!-- Add popular recipes here -->
-        <div class="mt-8">
+        <h4 class="font-bold text-lg md:text-xl mb-4">Latest Recipes</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <article class="mb-8">
+            <img src="assets/bakedsalmon.jpg" alt="Baked salmon with creamy spinach mushrooms sauce" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Baked salmon with creamy spinach mushrooms sauce.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+          <article class="mb-8">
+            <img src="assets/spaghettipastawithtomatosauce.jpg" alt="Delicious appetizing classic spaghetti pasta with tomato sauce, parmesan cheese and fresh herbs" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Spaghetti pasta with tomato sauce, parmesan cheese and fresh herbs.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+          <article class="mb-8">
+            <img src="assets/pumpkinsalad.jpg" alt="Pumpkin and feta salad" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Pumpkin salad with beetroot, arugula and feta cheese.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+          <article class="mb-8">
+            <img src="assets/pastawithgreenvegetables.jpg" alt="Pasta with green vegetables with parmesan cheese and fresh bas" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Pasta with green vegetables and creamy sauce.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+        </div>
+        <h4 class="font-bold text-lg md:text-xl mb-4">Most Popular</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <article class="mb-8">
+            <img src="assets/vegetariansandwich.jpg" alt="Vegetarian sandwich with avocado dressing" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Vegetarian sandwich made with sourdough bread.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+          <article class="mb-8">
+            <img src="assets/duckleg.jpg" alt="Baked duck leg" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Baked Duck Leg.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+          <article class="mb-8">
+            <img src="assets/beefstew.jpg" alt="Beef stew" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Beef stew.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+          <article class="mb-8">
+            <img src="assets/stuffedbutternutsquash.jpg" alt="Stuffed butternut squash with risotto rice" class="w-full h-auto mb-4" />
+            <div>
+              <span class="block font-semibold">Stuffed Butternut Squash.</span>
+              <span class="block text-gray-600">Recipe by name</span>
+            </div>
+          </article>
+        </div>
+        <div class="mt-8 flex justify-center">
           <button class="bg-red-500 text-white px-4 py-2 rounded">Load More</button>
         </div>
       </section>
@@ -64,3 +115,4 @@
 
 </body>
 </html>
+
