@@ -1,72 +1,66 @@
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
-    <title>Food Blog</title>
-  </head>
-  <body class="text-Gray-500">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <title>Food Blog</title>
+</head>
+<body class="text-gray-500">
 
-    <div>
-      <div>
-        <nav>
-          <div>
-            <h1 class="font-bold uppercase">
-              <a href="">Food Blog</a>
-            </h1>
-          </div>
-          <ul>
-            <li class="text-gray-700 font-bold">
-              <a href="">
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>About</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+  <div class="container mx-auto">
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="font-bold uppercase">
+          <a href="#">Food Blog</a>
+        </h1>
+        <ul class="flex space-x-4">
+          <li class="text-gray-700 font-bold">
+            <a href="#" class="hover:text-gray-900">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-900">
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-900">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <main>
-        <div>
-          <a href="">Log In</a>
-          <a href="">Sign Up</a>
-        </div>
-        <header>
-          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-          <h3></h3>
-        </header>
-
-        <div>
-          <h4 class="font-bold">Lastest Recipes</h4>
-
-        </div>
-
-        <div>
-          <img src="/assets/bakedsalmon.jpg" alt="Baked salmon with creamy spinach mushrooms sauce" />
+    </nav>
+    <main class="px-16 py-16">
+      <div class="flex justify-end space-x-4 mb-8">
+        <a href="#" class="text-red-500">Log In</a>
+        <a href="#" class="text-red-500">Sign Up</a>
+      </div>
+      <header class="mb-12">
+        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-2xl mt-2">Discover your favorite recipes</h3>
+      </header>
+      <section>
+        <h4 class="font-bold text-xl mb-4">Latest Recipes</h4>
+        <article class="mb-8">
+          <img src="assets/bakedsalmon.jpg" alt="Baked salmon with creamy spinach mushrooms sauce" class="w-full h-auto mb-4" />
           <div>
-            <span>Baked salmon with creamy spinach mushrooms sauce</span>
-            <span>Recipe by name</span>
+            <span class="block font-semibold">Baked salmon with creamy spinach mushrooms sauce</span>
+            <span class="block text-gray-600">Recipe by name</span>
           </div>
-          <h4>Most Popular</h4>
-          <div>
-
-          </div>
-          <div>
-
-          </div>
-          <div>Load More</div>
+        </article>
+        <h4 class="font-bold text-xl mb-4">Most Popular</h4>
+        <!-- Add popular recipes here -->
+        <div class="mt-8">
+          <button class="bg-red-500 text-white px-4 py-2 rounded">Load More</button>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
+  </div>
 
-  </body>
+</body>
 </html>
