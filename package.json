@@ -1,0 +1,17 @@
+{
+  "name": "foodblog",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/styles.css -o ./built/css/styles.css --watch"
+  },
+  
+  "author": "sana Khuram",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^2.2.19"
+  }
+}
