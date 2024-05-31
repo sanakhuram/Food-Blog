@@ -9,7 +9,10 @@ document.getElementById('search-button').addEventListener('click', () => {
 function fetchRecipes(query) {
     fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${apiKey}`)
         .then(response => response.json())
-        .then(data => displayRecipes(data.results))
+        .then(data => {
+            console.log(data); // Log the API response
+            displayRecipes(data.results);
+        })
         .catch(error => console.error('Error fetching recipes:', error));
 }
 
@@ -21,7 +24,10 @@ function displayRecipes(recipes) {
         return;
     }
 
-    recipes.forEach(recipe => {
+    // Limit the number of recipes displayed
+    const limitedRecipes = recipes.slice(0, 8);
+
+    limitedRecipes.forEach(recipe => {
         const recipeDiv = document.createElement('article');
         recipeDiv.classList.add('mb-8');
 
@@ -33,6 +39,12 @@ function displayRecipes(recipes) {
         recipeImage.src = recipe.image;
         recipeImage.alt = recipe.title;
         recipeImage.classList.add('w-full', 'h-auto', 'mb-4');
+        
+        // Add error handling for image loading
+        recipeImage.onerror = () => {
+            recipeImage.src = 'path/to/fallback-image.jpg'; // Use a fallback image if the image fails to load
+        };
+        
         recipeLink.appendChild(recipeImage);
 
         const recipeTitle = document.createElement('span');
@@ -48,3 +60,4 @@ function displayRecipes(recipes) {
         resultsDiv.appendChild(recipeDiv);
     });
 }
+
