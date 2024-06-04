@@ -25,7 +25,7 @@ function displayRecipes(recipes) {
     }
 
     // Limit the number of recipes displayed
-    const limitedRecipes = recipes.slice(0, 8);
+    const limitedRecipes = recipes.slice(0, 4);
 
     limitedRecipes.forEach(recipe => {
         const recipeDiv = document.createElement('article');
