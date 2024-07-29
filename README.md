@@ -14,8 +14,8 @@ In this repository, I will be creating a food blog website to practice and impro
 
 The main goals of this project are:
 
-1. To master the use of Tailwind CSS for styling.
-2. To enhance my JavaScript skills by creating dynamic and interactive features.
+1. To use Tailwind CSS for styling.
+2. To experience JavaScript skills by creating dynamic and interactive features.
 3. To learn how to integrate and use open-source APIs effectively.
 
 ## Features
