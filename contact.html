@@ -14,9 +14,9 @@
       <div class="flex justify-between items-center p-4">
         <h1 class="font-bold uppercase flex items-center">
           <a href="index.html" class="flex items-center space-x-2">
-            <span>Recipe Haven</span>
-          <img src="assets/blogimage.webp" alt="recipe blog image" class="h-6 w-6" >
-        </a>
+            <span>Food Blog</span>
+            <img src="assets/Food.gif" alt="recipe blog image" class="h-16 w-16" >
+          </a>
         </h1>
         <ul class="flex space-x-4">
           <li>
@@ -44,7 +44,10 @@
       </header>
       <section class="mb-16">
         <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
-          <form action="#" method="post">
+          <!-- Message displayed when the form is being sent -->
+          <div id="form-message" class="text-center text-lg text-green-500 mb-4"></div>
+
+          <form id="contact-form" action="#" method="post" onsubmit="handleSubmit(event)">
             <div class="mb-4">
               <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
               <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400" required>
@@ -66,7 +69,9 @@
     </main>
     <footer class="bg-white shadow-md mt-12">
       <div class="container mx-auto p-4 text-center">
-        <p class="text-gray-700">&copy; 2024 Food Blog. All Rights Reserved.</p>
+        <p class="text-gray-700">&copy; 2024 Food Blog. Project by 
+          <a href="https://github.com/sanakhuram" target="_blank" class="text-blue-600 hover:text-blue-800">Sana Khuram</a>.
+        </p>
         <ul class="flex justify-center space-x-4 mt-2">
           <li>
             <a href="https://www.facebook.com" target="_blank" class="hover:text-gray-900">
@@ -92,5 +97,15 @@
       </div>
     </footer>
   </div>
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.textContent = "Your message is being sent...";
+      setTimeout(() => {
+        window.location.href = 'index.html'; 
+      }, 2000); 
+    }
+  </script>
 </body>
 </html>
