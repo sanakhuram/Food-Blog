@@ -1,4 +1,6 @@
 # Food Blog
+![image](https://github.com/user-attachments/assets/f8035460-2f16-49a9-a5e7-b72b6c8ddb22)
+
 
 Welcome to the Food Blog repository! This project is focused on practicing Tailwind CSS and enhancing my experience with JavaScript by integrating open-source APIs.
 
