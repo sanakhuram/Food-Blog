@@ -5,7 +5,7 @@
 Welcome to the **Food Blog** repository! This project is dedicated to honing **Tailwind CSS** and **JavaScript** skills while exploring the power of **open-source APIs** to create a dynamic, interactive food blog. 🥘✨  
 
 ---
-## Live Demo🪟
+## Live Demo🪟 https://sanakhuram.github.io/Food-Blog/
 
 ## 🌟 **Description**  
 
@@ -63,7 +63,7 @@ In this project, I am building a **food blog website** as part of my learning jo
 ## 📞 **Contact Me**  
 
 Feel free to connect with me on **LinkedIn** for any inquiries or collaborations:  
-🔗 [Your LinkedIn Profile](https://www.linkedin.com/notifications/?filter=all)  
+🔗 [LinkedIn Profile](https://www.linkedin.com/notifications/?filter=all)  
 
 ---
 
